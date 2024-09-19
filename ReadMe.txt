@@ -1,8 +1,8 @@
 This is a repository of the code for this paper: https://www.fortunejournals.com/articles/analysis-and-modeling-of-early.pdf.
 
-We used the "Image_Processing" file to process the raw breast cancer cell, which includes the DAPI channel, the Intraonic channel, and the exonic channel. The outcome of this process is a Python dictionary saved as a pickle file. We used the pickle file from the "Image_Processing" to get the table of Qi's probability of activation for a single or a pair of alleles, compute mutual information, and perform further statistical analysis.
+We used the "Image_Processing" file to process the raw breast cancer cells, including the DAPI, Intraonic, and exonic channels. The outcome of this process is a Python dictionary saved as a pickle file. We used the pickle file from the "Image_Processing" to get the table of $Q_{i}$'s probability of activation for a single or a pair of alleles, compute mutual information, and perform further statistical analysis.
 
-Next, we used the "Statistical_Analysis" Python file to compute $Q_{i}$ and mutual information. The outcome of this process is a data frame that you can save as CSV or XLSX file for further visualization. 
+Next, we used the "Statistical_Analysis" Python file to compute $Q_{i}$ and mutual information. The outcome of this process is a data frame that you can save as a CSV or XLSX file for further visualization. 
 
 Furthermore, for simulating our model for the population of cells, we used the "FV+E2_experiments_prediction" to simulate the model and the "E2_experiments_prediction" for the extended model where we have transcription before time 0. This simulation's outcome is also a Python dictionary saved as a pickle file. 
 
